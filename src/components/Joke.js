@@ -23,10 +23,5 @@ const mapStateToProps = state => {
     dadJoke: state.dadJoke
   }
 }
-//
-// const displayJoke = ({ dadJoke }) => {
-//     <p>{dadJoke.joke}</p>
-// }
 
-// const Joke = connect(mapStateToProps, {getData} )(displayJoke);
 export default connect(mapStateToProps, {loadData})(DadJoke)
