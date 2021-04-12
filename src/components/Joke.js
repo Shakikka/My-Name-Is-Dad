@@ -17,7 +17,6 @@ class DadJoke extends Component {
     }
 }
 
-
 const mapStateToProps = state => {
   return {
     dadJoke: state.dadJoke
