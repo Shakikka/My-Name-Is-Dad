@@ -8,10 +8,16 @@ class DadJoke extends Component {
       this.props.loadData()
     }
 
+    randomDadJoke = (event) => {
+      event.preventDefault()
+      this.props.loadData()
+    }
+
     render () {
         return (
            <div>
             {this.props.dadJoke}
+            <button onClick={this.randomDadJoke}>Summon Dad Joke</button>
           </div>
       )
     }
