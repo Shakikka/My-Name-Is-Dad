@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadJoke } from '../actions/index'
-import { loadData } from '../reducers/index'
-import { store } from '../index'
+import { loadData } from '../actions/index'
 
 class DadJoke extends Component {
-    constructor(props) {
-        super(props);
-    }
-
+   
     componentDidMount() {
-      store.dispatch(loadData)
+      this.props.loadData()
     }
 
     render () {
@@ -24,8 +19,9 @@ class DadJoke extends Component {
 
 
 const mapStateToProps = state => {
-
-  return state
+  return {
+    dadJoke: state.dadJoke
+  }
 }
 //
 // const displayJoke = ({ dadJoke }) => {

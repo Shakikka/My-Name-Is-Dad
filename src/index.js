@@ -8,13 +8,13 @@ import * as serviceWorker from './serviceWorker';
 import reducer from './reducers';
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
-import { loadData } from './reducers/index'
-import { loadJoke } from './actions/index'
+// import { loadData } from './reducers/index'
+// import { loadJoke } from './actions/index'
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunk))
 const store = createStore(reducer, composedEnhancer);
 
-store.dispatch(loadData)
+// store.dispatch(loadData)
 
 ReactDOM.render(
   <React.StrictMode>
