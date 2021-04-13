@@ -9,5 +9,16 @@ main {
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    align-items: center;
     width: 50%;
+}
+
+.joke-btn {
+    background-color: black;
+    color: #F9F6F6;
+    font-size: large;
+    border: solid  #FE7D7C;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
 }
