@@ -1,36 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadJoke } from '../actions/index'
-import { loadData } from '../reducers/index'
-import { store } from '../index'
+import { loadData } from '../actions/index'
 
 class DadJoke extends Component {
-    constructor(props) {
-        super(props);
+   
+    componentDidMount() {
+      this.props.loadData()
     }
 
-    componentDidMount() {
-      store.dispatch(loadData)
+    randomDadJoke = (event) => {
+      event.preventDefault()
+      this.props.loadData()
     }
 
     render () {
         return (
            <div>
             {this.props.dadJoke}
+            <button onClick={this.randomDadJoke}>Summon Dad Joke</button>
           </div>
            )
     }
 }
 
-
 const mapStateToProps = state => {
-
-  return state
+  return {
+    dadJoke: state.dadJoke
+  }
 }
-//
-// const displayJoke = ({ dadJoke }) => {
-//     <p>{dadJoke.joke}</p>
-// }
 
-// const Joke = connect(mapStateToProps, {getData} )(displayJoke);
 export default connect(mapStateToProps, {loadData})(DadJoke)
