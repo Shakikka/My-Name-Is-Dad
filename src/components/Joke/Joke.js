@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadData } from '../actions/index'
+import { loadData } from '../../actions/index'; 
+import './Joke.css'; 
+import dad from './dad.png';
 
 class DadJoke extends Component {
    
@@ -15,11 +17,16 @@ class DadJoke extends Component {
 
     render () {
         return (
-           <div>
-            {this.props.dadJoke}
-            <button onClick={this.randomDadJoke}>Summon Dad Joke</button>
-          </div>
-      )
+          <main>
+            <section>
+              <img src={dad} alt="Dad"></img>
+            </section>
+            <section className="joke-container">
+              <button className="joke-btn" onClick={this.randomDadJoke}>Summon Dad Joke</button>
+              <h2>{this.props.dadJoke}</h2>
+            </section>
+          </main>
+           )
     }
 }
 
