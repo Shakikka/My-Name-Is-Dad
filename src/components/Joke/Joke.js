@@ -21,9 +21,9 @@ class DadJoke extends Component {
             <section>
               <img src={dad} alt="Dad"></img>
             </section>
-            <section>
-              {this.props.dadJoke}
+            <section className="joke-container">
               <button onClick={this.randomDadJoke}>Summon Dad Joke</button>
+              <h2>{this.props.dadJoke}</h2>
             </section>
           </main>
            )
