@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 const App = () => {
   return (
     <body>
-      <Header />
+      {/* <Header /> */}
       <DadJoke />
       <Footer />
     </body>
