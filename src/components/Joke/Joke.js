@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadData } from '../actions/index'
+import { loadData } from '../../actions/index'; 
+import './Joke.css'; 
 
 class DadJoke extends Component {
    
