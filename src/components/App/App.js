@@ -3,14 +3,18 @@ import './App.css';
 import Header from '../Header/Header';
 import DadJoke from '../Joke/Joke';
 import Footer from '../Footer/Footer';
+import SearchForm from '../SearchForm/SearchForm'
+import SearchedDadJokes from '../SearchedDadJokes/SearchedDadJokes'
 
 const App = () => {
   return (
-    <body>
+    <div>
       <Header />
+      <SearchForm />
       <DadJoke />
+      <SearchedDadJokes />
       <Footer />
-    </body>
+    </div>
   );
 }
 

@@ -4,8 +4,9 @@ import { loadData } from '../../actions/index';
 import './Joke.css'; 
 import dad from './dad-gif.gif';
 
+
 class DadJoke extends Component {
-   
+
     componentDidMount() {
       this.props.loadData()
     }
