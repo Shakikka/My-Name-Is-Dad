@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadData } from '../../actions/index'; 
-import './Joke.css'; 
+import { loadData } from '../../actions/index';
+import './Joke.css';
 import dad from './dad.png';
 
 class DadJoke extends Component {
-   
+
     componentDidMount() {
       this.props.loadData()
     }
