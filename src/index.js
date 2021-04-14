@@ -22,3 +22,6 @@ ReactDOM.render(
 );
 
 serviceWorker.unregister();
+
+export { store }
+
