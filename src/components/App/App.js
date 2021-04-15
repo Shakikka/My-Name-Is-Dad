@@ -18,7 +18,7 @@ const App = () => {
             return (
               <div className='search-page'>
                 <section>
-                    <SearchForm />
+                    <SearchForm className='search-form'/>
                     <SearchedDadJokes />
                 </section>
                 <img className='lawn' src={lawn}></img>

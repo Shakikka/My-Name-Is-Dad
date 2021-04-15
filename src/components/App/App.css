@@ -8,6 +8,11 @@ body {
     margin: 2em; 
 }
 
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
 .lawn {
     height: 450px;
     width: auto;
