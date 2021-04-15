@@ -17,11 +17,11 @@ const App = () => {
           <Route exact path='/search' render={() => {
             return (
               <div className='search-page'>
-                <img className='lawn' src={lawn}></img>
                 <section>
                     <SearchForm />
                     <SearchedDadJokes />
                 </section>
+                <img className='lawn' src={lawn}></img>
               </div>
             )
           }} />
