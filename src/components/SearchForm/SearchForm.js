@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { searchData } from '../../actions/index'
-import { connect } from 'react-redux'
+import { searchData } from '../../actions/index';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class SearchForm extends Component {
   constructor() {
@@ -34,7 +35,9 @@ class SearchForm extends Component {
                     value={this.state.searchWord}
                     onChange={this.handleChange}
                 />
-                <button onClick={this.handleSubmit}>Search</button>
+                <Link to='/searched'>
+                  <button onClick={this.handleSubmit}>Search</button>
+                </Link>
             </form>
 
         )
