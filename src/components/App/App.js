@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import SearchForm from '../SearchForm/SearchForm';
 import SearchedDadJokes from '../SearchedDadJokes/SearchedDadJokes';
 import { Route, Switch } from 'react-router-dom';
+import lawn from './fatherly-mowerscene.gif';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
               <>
                 <SearchForm />
                 <SearchedDadJokes />
+                <img src={lawn}></img>
               </>
             )
           }} />
