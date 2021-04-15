@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { searchData } from '../../actions/index'
-import { connect } from 'react-redux'
+import { searchData } from '../../actions/index';
+import { connect } from 'react-redux';
 
 class SearchForm extends Component {
   constructor() {

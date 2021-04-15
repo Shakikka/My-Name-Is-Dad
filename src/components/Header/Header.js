@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,8 +11,12 @@ const Header = () => {
                 <p>Hi App, my name is Dad!</p>
             </div>
             <div className="nav-btn-container">
-                <button className="nav-btn">Be Your Own Dad</button>
-                <button className="nav-btn">Favorites</button>
+                <Link to={'/'}>
+                    <button className="nav-btn">Humble Abode</button>
+                </Link>
+                <Link to={'/search'}>
+                    <button className="nav-btn">Search</button>
+                </Link>
             </div>
         </header>
     )
