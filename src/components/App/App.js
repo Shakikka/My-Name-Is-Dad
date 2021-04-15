@@ -13,7 +13,7 @@ const App = () => {
       <Header />
         <Switch>
       <Route exact path='/' render={() => <DadJoke/> }/>
-          <Route exact path='/searched' render={() => {
+          <Route exact path='/search' render={() => {
             return (
               <>
                 <SearchForm/>

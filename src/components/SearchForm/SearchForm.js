@@ -35,9 +35,9 @@ class SearchForm extends Component {
                     value={this.state.searchWord}
                     onChange={this.handleChange}
                 />
-                <Link to='/searched'>
+                {/* <Link to='/searched'> */}
                   <button onClick={this.handleSubmit}>Search</button>
-                </Link>
+                {/* </Link> */}
             </form>
 
         )
