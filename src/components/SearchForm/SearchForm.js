@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { searchData } from '../../actions/index';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 
 class SearchForm extends Component {
   constructor() {
