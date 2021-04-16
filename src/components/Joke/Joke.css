@@ -7,9 +7,10 @@ main {
 
 .joke-container {
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 100px;
     width: 50%;
 }
 
@@ -17,7 +18,6 @@ main {
     background-color: black;
     color: #F9F6F6;
     font-size: large;
-    /* border: solid  #FE7D7C; */
     width: 50%;
     height: 50px;
     border-radius: 10px;

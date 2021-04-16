@@ -16,11 +16,13 @@ const App = () => {
       <Route exact path='/' render={() => <DadJoke/> }/>
           <Route exact path='/search' render={() => {
             return (
-              <>
-                <SearchForm />
-                <SearchedDadJokes />
-                <img src={lawn}></img>
-              </>
+              <div className='search-page'>
+                <section className='search-form'>
+                    <SearchForm />
+                    <SearchedDadJokes />
+                </section>
+                <img className='lawn' src={lawn}></img>
+              </div>
             )
           }} />
         </Switch>

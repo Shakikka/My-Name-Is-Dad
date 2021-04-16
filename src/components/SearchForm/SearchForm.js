@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { searchData } from '../../actions/index';
 import { connect } from 'react-redux';
+import './form.css'; 
 
 class SearchForm extends Component {
   constructor() {
@@ -26,15 +27,17 @@ class SearchForm extends Component {
 
     render() {
         return (
-            <form>
-                <input
+          <form >
+                <input 
+                    className='search-input'
                     type='text'
+                    placeholder='Search a key word...'
                     id='searchWord'
                     name='searchWord'
                     value={this.state.searchWord}
                     onChange={this.handleChange}
                 />
-                <button onClick={this.handleSubmit}>Search</button>
+                <button className='search-btn' onClick={this.handleSubmit}>Search</button>
             </form>
 
         )
