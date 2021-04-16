@@ -18,6 +18,6 @@ body {
 
 .lawn {
     width: 39%;
-    height: auto;
+    height: 100%;
     box-shadow: 0 0 2em #46B68D;
 }
