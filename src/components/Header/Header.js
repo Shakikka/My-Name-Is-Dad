@@ -15,7 +15,7 @@ const Header = () => {
                     <button className="nav-btn">Humble Abode</button>
                 </Link>
                 <Link to={'/search'}>
-                    <button className="nav-btn">Search</button>
+                    <button className="nav-btn nav-search">Search</button>
                 </Link>
             </div>
         </header>
