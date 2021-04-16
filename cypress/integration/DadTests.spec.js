@@ -30,6 +30,10 @@ describe('My-Name-Is-Dad', () => {
     it('should search a dadegory', () => {
       cy.fixture('searched-joke-data.json').then((dadJokes) => {
           cy.intercept('https://icanhazdadjoke.com/search?term=hipster', dadJokes)
-      }).get('.search-input').type('hipster').get('.search-btn').click()
+      }).get('.search-input').type('hipster').get('.search-btn').click().get('.search-page').contains('pizza')
+    })
+
+    it('should take you home when clicking humble abode', () => {
+      cy.get('.nav-home').click().url().should('eq', 'http://localhost:3000/').get('.joke-container').contains('Summon')
     })
 })
