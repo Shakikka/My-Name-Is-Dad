@@ -31,7 +31,7 @@ class SearchForm extends Component {
                 <input 
                     className='search-input'
                     type='text'
-                    placeholder='Search a key word...'
+                    placeholder='Enter a Dadegory...'
                     id='searchWord'
                     name='searchWord'
                     value={this.state.searchWord}
