@@ -1,11 +1,12 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import './searchedJokes.css'; 
 
 const SearchedDadJokes = (props) => {
   return (
-    <ul>
+    <ul >
       {props.filteredJokes && props.filteredJokes.map(joke => {
         return (
-          <h2 className='slide-top'><li key={joke.id}>{joke.joke}</li></h2>
+              <h2 className='slide-top'><li key={joke.id}>{joke.joke}</li></h2>
         )
       })}
     </ul>

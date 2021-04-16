@@ -27,7 +27,7 @@ class SearchForm extends Component {
 
     render() {
         return (
-          <form >
+          <form>
                 <input 
                     className='search-input'
                     type='text'
