@@ -19,6 +19,7 @@ class SearchForm extends Component {
     handleSubmit = e => {
         e.preventDefault();
         this.props.searchData(this.state.searchWord)
+        this.clearInputs();
     }
 
     clearInputs = () => {
