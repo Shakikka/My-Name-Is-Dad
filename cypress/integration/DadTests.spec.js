@@ -16,7 +16,17 @@ describe('My-Name-Is-Dad', () => {
         cy.visit('http://localhost:3000')
         cy.contains('Red light')
     })
+
     it('should generate a dad joke on button click', () => {
+        cy.fixture('random-button-joke.json').then(dadJoke => {
+            cy.intercept('https://icanhazdadjoke.com/', dadJoke)
+        })
         cy.get('.joke-btn').click()
+        cy.contains('nose')
     })
+
+    it('should go to the search page when the search bar is clicked', () => {
+        cy.get('.nav-search').click().url().should('eq', 'http://localhost:3000/search')
+    })
+
 })
