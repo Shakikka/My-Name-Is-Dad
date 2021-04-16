@@ -1,14 +1,12 @@
 import { FaItalic } from "react-icons/fa"
 
 describe('My-Name-Is-Dad', () => {
-    beforeEach(() => {
-        cy.fixture('searched-joke-data.json').then((dadJokes) => {
-            cy.intercept('https://icanhazdadjoke.com/search?term=hipster', dadJokes)
-        })
-        
-    })
-    
-    
+    // beforeEach(() => {
+    //
+    //
+    // })
+
+
     it('should show a random dad joke on page load', () => {
         cy.fixture('dad-joke-data.json').then((dadJoke) => {
             cy.intercept('https://icanhazdadjoke.com/', dadJoke)
@@ -29,4 +27,9 @@ describe('My-Name-Is-Dad', () => {
         cy.get('.nav-search').click().url().should('eq', 'http://localhost:3000/search')
     })
 
+    it('should search a dadegory', () => {
+      cy.fixture('searched-joke-data.json').then((dadJokes) => {
+          cy.intercept('https://icanhazdadjoke.com/search?term=hipster', dadJokes)
+      }).get('.search-input').type('hipster').get('.search-btn').click()
+    })
 })
