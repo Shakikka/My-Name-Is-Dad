@@ -17,8 +17,8 @@ const App = () => {
           <Route exact path='/search' render={() => {
             return (
               <div className='search-page'>
-                <section>
-                    <SearchForm className='search-form'/>
+                <section className='search-form'>
+                    <SearchForm />
                     <SearchedDadJokes />
                 </section>
                 <img className='lawn' src={lawn}></img>
