@@ -21,3 +21,16 @@ body {
     height: 100%;
     box-shadow: 0 0 2em #46B68D;
 }
+
+
+@media screen and (max-width: 600px) {
+
+     {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0; 
+    }
+
+}

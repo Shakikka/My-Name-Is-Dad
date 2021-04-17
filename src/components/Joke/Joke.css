@@ -27,3 +27,24 @@ main {
 	-webkit-animation: wobble-hor-bottom 0.8s both;
 	animation: wobble-hor-bottom 0.8s both;
 }
+
+@media screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0; 
+    }
+
+    .dad {
+        width: 300px;
+    }
+
+    .joke-container {
+        padding: 10px; 
+        width: 90%;
+    }
+
+}
