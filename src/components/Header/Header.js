@@ -24,10 +24,10 @@ const Header = () => {
             </div>
             <div className="nav-btn-container">
                 <Link to={'/'}>
-                     {!abode && <button className="nav-btn">Humble Abode</button>}
+                    {!abode && <button className="nav-btn nav-home">Humble Abode</button>}
                 </Link>
                 <Link to={'/search'}>
-                    {!search && <button className="nav-btn">Search</button>}
+                    {!search && <button className="nav-btn nav-search">Search</button>}
                 </Link>
             </div>
         </header>
