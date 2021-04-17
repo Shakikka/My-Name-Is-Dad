@@ -28,6 +28,10 @@ a {
 
 @media screen and (max-width: 600px) {
 
+    footer {
+        position: relative; 
+    }
+
     .footer-name {
         font-size: medium;
     }

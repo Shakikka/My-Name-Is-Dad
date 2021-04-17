@@ -17,16 +17,48 @@ main {
 .joke-btn {
     background-color: black;
     color: #F9F6F6;
-    font-size: large;
-    width: 50%;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.wobble {
-	-webkit-animation: wobble-hor-bottom 0.8s both;
-	animation: wobble-hor-bottom 0.8s both;
-}
+    text-align: center;
+    font-size: 30px;
+    width: 310px;
+    height: 80px;
+    box-shadow: 
+      0px 0px 0px 15px #FE7D7C,
+      0px 10px 0px 15px #ca6363,
+      0px 20px 20px 15px #0003;
+    cursor: pointer;
+    border-radius: 100px 30px 100px 30px;
+    margin: 30px; 
+    outline: none;
+  }
+  
+  .joke-btn:hover {
+    animation: .8s morph ease infinite;
+  }
+  
+.joke-btn:hover p {
+    animation: .8s rot ease infinite;
+  }
+  
+  @keyframes morph {
+    0% {
+      border-radius: 100px 30px 100px 30px;
+    } 50% {
+      border-radius: 30px 100px 30px 100px;
+    } 100% {
+      border-radius: 100px 30px 100px 30px;
+    }
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(-3deg);
+    } 50% {
+      transform: rotate(3deg);
+    } 100% {
+      transform: rotate(-3deg);
+    }
+  }
+  
 
 @media screen and (max-width: 600px) {
 
