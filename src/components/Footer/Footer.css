@@ -30,6 +30,11 @@ a {
 
     footer {
         position: relative; 
+        bottom: 0; 
+    }
+
+    .footer-container {
+        flex-direction: column;
     }
 
     .footer-name {
