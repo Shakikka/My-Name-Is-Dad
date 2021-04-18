@@ -3,8 +3,9 @@ export const loadData = () => {
     fetch('https://icanhazdadjoke.com/', {
       headers: { "Accept": "application/json" }
     })
-      .then(response => response.json())
+      .then(checkForError)
       .then(data => dispatch({ type: 'DATA_LOADED', payload: data }))
+      .catch(error => console.log(error))
   }
 }
 
@@ -13,7 +14,16 @@ export const searchData = (searchTerm) => {
     fetch(`https://icanhazdadjoke.com/search?term=${searchTerm}`, {
       headers: { "Accept": "application/json" }
     })
-      .then(response => response.json())
+      .then(checkForError)
       .then(data => dispatch({ type: 'DATA_SEARCHED', payload: data }))
+      .catch(error => console.log(error))
+  }
+}
+
+const checkForError = (response) => {
+  if (!response.ok) {
+    throw new Error(response.message);
+  } else {
+    return response.json();
   }
 }

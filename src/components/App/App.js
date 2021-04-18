@@ -5,7 +5,7 @@ import DadJoke from '../Joke/Joke';
 import Footer from '../Footer/Footer';
 import SearchForm from '../SearchForm/SearchForm';
 import SearchedDadJokes from '../SearchedDadJokes/SearchedDadJokes';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import lawn from './fatherly-mowerscene.gif';
 import './animista.css'; 
 
@@ -14,7 +14,7 @@ const App = () => {
     <div>
       <Header />
         <Switch>
-      <Route exact path='/' render={() => <DadJoke/> }/>
+          <Route exact path='/' render={() => <DadJoke/> }/>
           <Route exact path='/search' render={() => {
             return (
               <div className='search-page'>
@@ -22,10 +22,11 @@ const App = () => {
                     <SearchForm />
                     <SearchedDadJokes />
                 </section>
-                <img className='lawn' src={lawn}></img>
+                <img className='lawn' alt='dad mowing the lawn' src={lawn}></img>
               </div>
             )
           }} />
+        <Route render={() => <Link to='/'><h2> 404: Please click here to find your dad.</h2></Link>}/>
         </Switch>
       <Footer />
     </div>

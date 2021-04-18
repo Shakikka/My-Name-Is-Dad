@@ -6,7 +6,7 @@ const SearchedDadJokes = (props) => {
     <ul >
       {props.filteredJokes && props.filteredJokes.map(joke => {
         return (
-            <h2 className='slide-top'><li key={joke.id}>{joke.joke}</li></h2>
+            <h2 className='slide-top' key={joke.id}><li>{joke.joke}</li></h2>
         )
       })}
     </ul>

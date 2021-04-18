@@ -5,16 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
 
     const location = useLocation().pathname; 
-    let abode = true; 
-    let search = true; 
-    if(location === '/') {
-        abode = true;
-        search = false; 
-    } else if (location === '/search' ) {
-        abode = false; 
-        search = true; 
-    }
-
+    
     return (
         <header>
             <div className='title-container'>
@@ -24,10 +15,10 @@ const Header = () => {
             </div>
             <div className="nav-btn-container">
                 <Link to={'/'}>
-                    {!abode && <button className="nav-btn nav-home">Humble Abode</button>}
+                    {location === '/search' && <button className="nav-btn nav-home">Humble Abode</button>}
                 </Link>
                 <Link to={'/search'}>
-                    {!search && <button className="nav-btn nav-search">Search</button>}
+                    {location === '/' && <button className="nav-btn nav-search">Search</button>}
                 </Link>
             </div>
         </header>
