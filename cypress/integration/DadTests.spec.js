@@ -33,6 +33,10 @@ describe('My-Name-Is-Dad', () => {
       }).get('.search-input').type('hipster').get('.search-btn').click().get('.search-page').contains('pizza')
     })
 
+    it('should display error message when there is no input for searching', () => {
+      cy.visit('http://localhost:3000/search')
+      cy.get('.search-btn').click()
+    })
     it('should take you home when clicking humble abode', () => {
       cy.get('.nav-home').click().url().should('eq', 'http://localhost:3000/').get('.joke-container').contains('Summon')
     })
