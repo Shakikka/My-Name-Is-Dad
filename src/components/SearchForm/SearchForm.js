@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { searchData } from '../../actions/index';
 import { connect } from 'react-redux';
-import './form.css'; 
+import './form.css';
 
 class SearchForm extends Component {
   constructor() {
@@ -9,7 +9,6 @@ class SearchForm extends Component {
     this.state = {
       searchWord: ''
     }
-    console.log(this.props)
   }
 
     handleChange = e => {
@@ -29,7 +28,7 @@ class SearchForm extends Component {
     render() {
         return (
           <form>
-                <input 
+                <input
                     className='search-input'
                     type='text'
                     placeholder='Enter a Dadegory...'

@@ -5,7 +5,7 @@ const reducer = (state = initialState, action) => {
       case 'DATA_LOADED':
         return {dadJoke: action.payload.joke, id: action.payload.id}
       case 'DATA_SEARCHED':
-        return {filteredJokes: action.payload.results}
+        return {filteredJokes: action.payload}
       default:
         return state
       }
