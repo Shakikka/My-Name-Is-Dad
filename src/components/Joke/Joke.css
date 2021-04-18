@@ -8,17 +8,86 @@ main {
 .joke-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
+    padding: 100px 80px 0 0;
     width: 50%;
 }
 
 .joke-btn {
     background-color: black;
     color: #F9F6F6;
-    font-size: large;
-    width: 50%;
-    height: 50px;
-    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    width: 310px;
+    height: 80px;
+    box-shadow: 
+      0px 0px 0px 15px #FE7D7C,
+      0px 10px 0px 15px #ca6363,
+      0px 20px 20px 15px #0003;
+    cursor: pointer;
+    border-radius: 100px 30px 100px 30px;
+    margin: 30px; 
+    outline: none;
+  }
+  
+  .joke-btn:hover {
+    animation: .8s morph ease infinite;
+  }
+  
+.joke-btn:hover p {
+    animation: .8s rot ease infinite;
+  }
+  
+  @keyframes morph {
+    0% {
+      border-radius: 100px 30px 100px 30px;
+    } 50% {
+      border-radius: 30px 100px 30px 100px;
+    } 100% {
+      border-radius: 100px 30px 100px 30px;
+    }
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(-3deg);
+    } 50% {
+      transform: rotate(3deg);
+    } 100% {
+      transform: rotate(-3deg);
+    }
+  }
+  
+
+@media screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0; 
+    }
+
+    .dad {
+        width: 300px;
+    }
+
+    .joke-container {
+        height: 350px;
+        padding: 10px; 
+        width: 90%;
+    }
+
+    h2 {
+      margin: 0; 
+    }
+
+    .joke-btn {
+      width: 250px;
+      height: 50px;
+      font-size: 20px;
+    }
+
 }

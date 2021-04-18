@@ -18,13 +18,13 @@ class DadJoke extends Component {
 
     render () {
         return (
-          <main>
+          <main >
             <section>
-              <img src={dad} alt="Dad"></img>
+              <img className='dad' src={dad} alt="Dad"></img>
             </section>
             <section className="joke-container">
               <button className="joke-btn" onClick={this.randomDadJoke}>Summon Dad Joke</button>
-              <h2>{this.props.dadJoke}</h2>
+              <h2 className='slide-top'>{this.props.dadJoke}</h2>
             </section>
           </main>
            )
