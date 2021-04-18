@@ -9,7 +9,6 @@ class SearchForm extends Component {
     this.state = {
       searchWord: ''
     }
-    console.log(this.props)
   }
 
     handleChange = e => {
