@@ -22,6 +22,9 @@ body {
     box-shadow: 0 0 2em #46B68D;
 }
 
+button {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
 
