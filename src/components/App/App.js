@@ -22,7 +22,7 @@ const App = () => {
                     <SearchForm />
                     <SearchedDadJokes />
                 </section>
-                <img className='lawn' src={lawn}></img>
+                <img className='lawn' alt='dad mowing the lawn' src={lawn}></img>
               </div>
             )
           }} />
