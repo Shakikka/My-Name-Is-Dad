@@ -22,6 +22,11 @@ body {
     box-shadow: 0 0 2em #46B68D;
 }
 
+.lost-error {
+    display: flex;
+    align-self: flex-end;
+}
+
 button {
     cursor: pointer;
 }

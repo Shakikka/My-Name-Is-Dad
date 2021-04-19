@@ -26,7 +26,7 @@ const App = () => {
               </div>
             )
           }} />
-        <Route render={() => <Link to='/' className='404' aria-label='error page'><h2> 404: Please click here to find your dad.</h2></Link>}/>
+        <Route render={() => <Link to='/' className='lost-error' aria-label='error page'><h2> 404: Please click here to find your dad.</h2></Link>}/>
         </Switch>
       <Footer />
     </div>
