@@ -5,7 +5,7 @@ export const loadData = () => {
     })
       .then(checkForError)
       .then(data => dispatch({ type: 'DATA_LOADED', payload: data }))
-      .catch(error => console.log(error))
+      .catch(error => alert(error))
   }
 }
 
@@ -16,7 +16,7 @@ export const searchData = (searchTerm) => {
     })
       .then(checkForError)
       .then(data => dispatch({ type: 'DATA_SEARCHED', payload: data }))
-      .catch(error => console.log(error))
+      .catch(error => alert(error))
   }
 }
 
