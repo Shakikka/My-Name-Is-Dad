@@ -5,7 +5,7 @@ body {
 .search-page {
     display: flex; 
     justify-content: space-around;
-    margin: 2em; 
+    margin: 2em;
 }
 
 .search-form {
@@ -34,7 +34,7 @@ button {
 @media screen and (max-width: 600px) {
 
      .search-page {
-        min-height: 440px;
+        min-height: 580px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
