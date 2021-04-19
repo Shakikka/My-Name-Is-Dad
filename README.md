@@ -28,7 +28,7 @@
 #### Humble Abode:
 <img src='./src/homepage.gif'/>
 #### Search Page:
-<img src='./src/searchpage'/>
+<img src='./src/searchpage.gif'/>
 ### Technologies Used:
 * Javacript
 * CSS
