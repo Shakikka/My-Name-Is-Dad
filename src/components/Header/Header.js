@@ -14,12 +14,12 @@ const Header = () => {
                 <p>Hi App, my name is Dad!</p>
             </div>
             <div className="nav-btn-container">
-                <Link to={'/'} aria-label='home'>
-                    {location === '/search' && <button className="nav-btn nav-home">Humble Abode</button>}
-                </Link>
-                <Link to={'/search'} aria-label='search'>
-                    {location === '/' && <button className="nav-btn nav-search">Search</button>}
-                </Link>
+                {location === '/search' && <Link to={'/'} aria-label='home'>
+                    <button className="nav-btn nav-home">Humble Abode</button>
+                </Link>}
+                {location === '/' && <Link to={'/search'} aria-label='search'>
+                    <button className="nav-btn nav-search">Search</button>
+                </Link>}
             </div>
         </header>
     )
