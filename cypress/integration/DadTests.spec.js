@@ -39,11 +39,18 @@ describe('My-Name-Is-Dad', () => {
       cy.contains('Please insert')
     })
 
-    it.only('should display a message when a dadegory cannot be found', () => {
+    it('should display a message when a dadegory cannot be found', () => {
         cy.visit('http://localhost:3000/search')
         cy.get('.search-input').type('afefd')
         cy.get('.search-btn').click()
         cy.contains('Dadly enough')
+    })
+
+    it.only('should display an error with a link when the wrong url is inserted', () => {
+        cy.visit('http://localhost:3000/dad')
+        cy.contains('find your dad')
+        cy.get('.404').click()
+        cy.url('eq', 'http://localhost:3000/')
     })
 
     it('should take you home when clicking humble abode', () => {
