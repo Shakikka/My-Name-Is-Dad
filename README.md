@@ -26,9 +26,9 @@
 
 ### Screenshots / Screen Recordings
 #### Humble Abode:
-![]()
+<img src='./src/homepage.gif'/>
 #### Search Page:
-![]()
+<img src='./src/searchpage'/>
 ### Technologies Used:
 * Javacript
 * CSS
