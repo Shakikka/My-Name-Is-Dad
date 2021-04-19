@@ -1,5 +1,3 @@
-import { FaItalic } from "react-icons/fa"
-
 describe('My-Name-Is-Dad home page', () => {
 
     it('should show a random dad joke on page load', () => {
