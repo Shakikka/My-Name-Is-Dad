@@ -23,13 +23,16 @@ class DadJoke extends Component {
               <img className='dad' src={dad} alt="Dad"></img>
             </section>
             <section className="joke-container">
-              <button className="joke-btn" onClick={this.randomDadJoke}>Summon Dad Joke</button>
-              <h2 className='slide-top'>{this.props.dadJoke}</h2>
+                <div>
+                  <button className="joke-btn" onClick={this.randomDadJoke}>Summon Dad Joke</button>
+                </div>
+                <h2 className='slide-top'>{this.props.dadJoke}</h2>
             </section>
           </main>
            )
     }
 }
+
 
 const mapStateToProps = state => {
   return {
