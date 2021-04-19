@@ -43,7 +43,7 @@
 ## Setup
 * To access the site on your local machine:
   * Clone down the repo through the command line
-  * Run `$npm install` https://my-name-is-dad.herokuapp.com/to install dependencies
+  * Run `$npm install` install dependencies
   * Run `$npm start` to open the page on a local browser
 * Otherwise the site is deployed onto heroku and accessible [here](https://my-name-is-dad.herokuapp.com/) 
 
