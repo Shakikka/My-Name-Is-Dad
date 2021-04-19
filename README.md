@@ -45,7 +45,7 @@
   * Clone down the repo through the command line
   * Run `$npm install` to install dependencies
   * Run `$npm start` to open the page on a local browser
-* Otherwise the site is deployed onto heroku and accessible [here](https://my-name-is-dad.herokuapp.com/) 
+* Otherwise the site is deployed onto heroku and is accessible [here](https://my-name-is-dad.herokuapp.com/) 
 
 ## Running Tests
 * After completing the setup steps above:
