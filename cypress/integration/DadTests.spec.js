@@ -1,11 +1,6 @@
 import { FaItalic } from "react-icons/fa"
 
 describe('My-Name-Is-Dad', () => {
-    // beforeEach(() => {
-    //
-    //
-    // })
-
 
     it('should show a random dad joke on page load', () => {
         cy.fixture('dad-joke-data.json').then((dadJoke) => {
