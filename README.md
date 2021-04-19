@@ -30,6 +30,7 @@
 
 #### Search Page:
 <img src='./src/searchpage.gif'/>
+
 ### Technologies Used:
 * Javacript
 * CSS
