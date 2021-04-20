@@ -44,10 +44,4 @@ class SearchForm extends Component {
     }
 }
 
-const mapStateToProps = state => {
-  return {
-    filteredJokes: state.filteredJokes
-  }
-}
-
-export default connect(mapStateToProps, {searchData})(SearchForm)
+export default connect(null, {searchData})(SearchForm)
